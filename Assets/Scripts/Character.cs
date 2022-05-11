@@ -33,6 +33,9 @@ public class Character : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.S))
         {
             Debug.Log("S was press, this was modified by B2");
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            Debug.Log("D was pressed,commit by B1");
         }
  
     }
