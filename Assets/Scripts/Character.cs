@@ -17,7 +17,7 @@ public class Character : MonoBehaviour
         Jump();
         Move();
     }
-    
+
     void Jump()
     {
         if (Input.GetKeyDown(KeyCode.Space))
@@ -28,15 +28,16 @@ public class Character : MonoBehaviour
     }
     void Move()
     {
-        Vector3 moveXDir = new Vector3(Input.GetAxis("Vertical"),0,0);
+        Vector3 moveXDir = new Vector3(Input.GetAxis("Vertical"), 0, 0);
         CharacterPosition = moveXDir;
         if (Input.GetKeyDown(KeyCode.S))
         {
             Debug.Log("S was press, this was modified by B2");
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            Debug.Log("D was pressed,commit by B1");
+            if (Input.GetKeyDown(KeyCode.D))
+            {
+                Debug.Log("D was pressed,commit by B1");
+            }
+
         }
- 
     }
 }
