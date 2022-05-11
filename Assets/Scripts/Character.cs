@@ -29,6 +29,10 @@ public class Character : MonoBehaviour
     {
         Vector3 moveXDir = new Vector3(Input.GetAxis("Vertical"),0,0);
         CharacterPosition = moveXDir;
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            Debug.Log("W was pressed,commit by B1");
+        }
  
     }
 }
