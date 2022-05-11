@@ -22,13 +22,18 @@ public class Character : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Debug.Log("Is Jump. This is modified by B1");
+            Debug.Log("Is Jump. This is modified by B2");
+
         }
     }
     void Move()
     {
         Vector3 moveXDir = new Vector3(Input.GetAxis("Vertical"),0,0);
         CharacterPosition = moveXDir;
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            Debug.Log("W was press, this was modified by B2");
+        }
  
     }
 }
