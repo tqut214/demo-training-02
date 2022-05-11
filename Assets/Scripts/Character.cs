@@ -30,9 +30,9 @@ public class Character : MonoBehaviour
     {
         Vector3 moveXDir = new Vector3(Input.GetAxis("Vertical"),0,0);
         CharacterPosition = moveXDir;
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.S))
         {
-            Debug.Log("W was press, this was modified by B2");
+            Debug.Log("S was press, this was modified by B2");
         }
  
     }
